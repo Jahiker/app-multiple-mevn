@@ -8,7 +8,12 @@ const app = express();
 // Conexion a base de datos
 import mongoose from 'mongoose';
 
-const uri = 'mongodb://localhost:27017/tareas';
+// conexion local
+// const uri = 'mongodb://localhost:27017/tareas';
+
+// conexion remota
+const uri = 'mongodb+srv://mevn:wB6*gdyK*KS&ZF9@cluster0-qarre.mongodb.net/mevnPrueba?retryWrites=true&w=majority';
+
 const options = {
     useNewUrlParser: true,
     useCreateIndex: true,
