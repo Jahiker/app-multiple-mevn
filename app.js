@@ -39,7 +39,7 @@ app.use(express.urlencoded({ extended: true }));
 //     res.send('Hola Mundo!');
 // });
 
-app.use(require('./routes/tarea'));
+app.use('/api', require('./routes/tarea'));
 
 // Para Vue.Js router modo history
 const history = require('connect-history-api-fallback');
